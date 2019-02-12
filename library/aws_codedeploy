@@ -62,7 +62,7 @@ def os_type():
 def get_package(module, pkg_type):
     dest = '/tmp/codedeploy_package.' + pkg_type
 
-    pkg_url = 'https://aws-codedeploy-eu-west-1.s3.amazonaws.com/latest/install'
+    pkg_url = 'https://s3.amazonaws.com/aws-codedeploy-us-east-1/latest/codedeploy-agent'
     if pkg_type == 'deb':
         pkg_url += '_all.deb'
     elif pkg_type == 'rpm':
